@@ -29,3 +29,6 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Angular Test
+        run: ng test --browsers ChromeHeadless
