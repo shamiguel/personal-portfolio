@@ -10,21 +10,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
-
-  projects:Content[] = [];
-
-  section:Section = {
-    name: '',
-    display: false,
-    content: this.projects
-  };
+  
+  portfolioTitle: String = "";
 
   constructor(private portfolioService: PortfolioService){}
 
-  ngOnInit():void{
-    this.portfolioService.getProjects().subscribe((data)=>{
-      this.section = data;
-      this.projects = this.section.content;
+  ngOnInit(): void {
+    this.portfolioService.getpPortfolioName().subscribe((data)=>{
+      this.portfolioTitle = data;
     })
   }
 
