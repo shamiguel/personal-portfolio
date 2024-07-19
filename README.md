@@ -6,6 +6,10 @@ This is a lightweight personal portfolio template that will allow you to have a 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
+## Wireframe
+![Screenshot 2024-07-19 2 31 02 PM](https://github.com/user-attachments/assets/7fa30c19-d734-44db-ae32-0e986f4a77d3)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
