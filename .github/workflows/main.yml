@@ -17,13 +17,20 @@ jobs:
         with:
           node-version: 20
 
-      - name: Build Angular app to prod
+      - name: Install dependencies
         working-directory: personal-portfolio
-        run: npm install && npm run build:prod
+        run: npm install
+
+      - name: Build Angular app to production
+        working-directory: personal-portfolio
+        run: npm run build:prod
+
+      - name: List build directory contents for debugging
+        run: ls -R personal-portfolio/dist/browser
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: personal-portfolio/dist/browser
-          branch: prod  
+          branch: prod
           token: ${{ secrets.GH_TOKEN }}
