@@ -2,7 +2,7 @@ import { Section, Content } from "./interfaces";
 
 export const intro = {
      portfolioName: "Shami Tomita-Rodriguez",
-     blurb: "I'm a software engineer! I'm a Googler :3"
+     blurb: "I'm a software engineer! I'm a Googler and I pushed this from my main branch! Even though my Github Pages deploys from my prod branch!"
 }
 
 /** Project Section
