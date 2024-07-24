@@ -2,7 +2,7 @@ import { Section, Content } from "./interfaces";
 
 export const intro = {
      portfolioName: "Shami Tomita-Rodriguez",
-     blurb: "I'm a software engineer! This should not cause any issues!"
+     blurb: "I'm a software engineer! I'm a Googler :3"
 }
 
 /** Project Section
