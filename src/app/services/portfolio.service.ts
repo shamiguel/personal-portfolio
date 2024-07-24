@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { portfolioName, projectSection, experienceSection, writingSection } from '../../customize/portfolio';
+import { intro, projectSection, experienceSection, writingSection } from '../../customize/portfolio';
 import { Observable, of } from 'rxjs';
 import { Section } from '../../customize/interfaces';
 @Injectable({
@@ -9,8 +9,8 @@ export class PortfolioService {
 
   constructor() { }
 
-  getpPortfolioName(): Observable<String>{
-    return of(portfolioName)
+  getIntro(): Observable<any>{
+    return of(intro)
   }
 
   getProjects(): Observable<Section>{

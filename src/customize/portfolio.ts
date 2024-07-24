@@ -1,6 +1,9 @@
 import { Section, Content } from "./interfaces";
 
-export const portfolioName = "Shami Tomita-Rodriguez";
+export const intro = {
+     portfolioName: "Shami Tomita-Rodriguez",
+     blurb: "I'm a software engineer!"
+}
 
 /** Project Section
  *  Customize these, if you'd like to add more be sure to copy the format (e.g. project1) 

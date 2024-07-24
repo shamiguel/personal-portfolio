@@ -11,13 +11,14 @@ import { CommonModule } from '@angular/common';
 })
 export class MainComponent {
   
-  portfolioTitle: String = "";
-
+  portfolioTitle: string = "";
+  blurb: string = "";
   constructor(private portfolioService: PortfolioService){}
 
   ngOnInit(): void {
-    this.portfolioService.getpPortfolioName().subscribe((data)=>{
-      this.portfolioTitle = data;
+    this.portfolioService.getIntro().subscribe((data)=>{
+      this.portfolioTitle = data.portfolioName;
+      this.blurb = data.blurb
     })
   }
 
