@@ -80,13 +80,22 @@ const experience3:Content = {
     link: "example.com"
 }
 
+const experience4:Content = {
+    name: "Job #1",
+    image: "./assets/images/exp.avif",
+    position: "string", 
+    text: "Lorem impsum herm er askll moded", 
+    link: "example.com"
+}
+
 export const experienceSection:Section = {
     name: "Experience",
     display: true,
     content: [
         experience1,
         experience2,
-        experience3
+        experience3,
+        experience4
     ]
 }
 
