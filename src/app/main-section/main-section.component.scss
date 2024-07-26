@@ -1,0 +1,13 @@
+.heading{
+    h2{
+        font-size: 2rem;
+    }
+}
+.teams{
+    display: flex;
+    flex-direction: row;
+    div{
+        max-width: 50%;
+        padding-right: 1rem;
+    }
+}
