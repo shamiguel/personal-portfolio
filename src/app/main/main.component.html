@@ -1,17 +1,22 @@
 <div class="intro">
 <h1>{{this.portfolioTitle}}</h1>
 <h2>{{this.blurb}}</h2>
-<p class="social-media">
+<div class="social-media">
     <ng-container *ngFor="let link of socialMediaLinks;">
-        <div *ngIf="link.name === 'github'">
+        <div  class="link" *ngIf="link.name === 'github'">
             <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faGithub"></fa-icon></a>
         </div>
+        <div class="link" *ngIf="link.name === 'linkedIn'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faLinkedIn"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'medium'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faMedium"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'gmail'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faEnvelope"></fa-icon></a>
+        </div>
      </ng-container>
-    
-    <fa-icon class="fa-2x" [icon]="faLinkedIn"></fa-icon>
-    <fa-icon class="fa-2x" [icon]="faMedium"></fa-icon>
-    <fa-icon class="fa-2x" [icon]="faEnvelope"></fa-icon>
-</p>
+    </div>
 </div>
 <div id="experience">
     <app-main-section [sectionData]="experiencesSection"></app-main-section>

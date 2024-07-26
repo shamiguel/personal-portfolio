@@ -6,9 +6,6 @@
     h2{
         font-size: 2rem;
     }
-    .link{
-        
-    }
 }
 .teams{
     display: flex;
@@ -16,5 +13,15 @@
     div{
         max-width: 50%;
         padding-right: 1rem;
+    }
+}
+a{
+    text-decoration: none;
+    color:#0A3EA6;
+    :hover{
+      color:#4a67a1;
+      font-style: italic;
+      font-style: bold;
+      font-weight: 800;
     }
 }

@@ -10,8 +10,20 @@
         
     }
     .social-media{
-       fa-icon{
-        padding-right: 3rem;
-       }
+        display: flex;
+        flex-direction: row;
+        .link{
+            a{
+                text-decoration: none;
+                color:#0A3EA6;
+                :hover{
+                  color:#4a67a1;
+                  font-style: italic;
+                  font-style: bold;
+                  font-weight: 800;
+                }
+            }
+            padding-right: 3rem;
+        }
     }
 }

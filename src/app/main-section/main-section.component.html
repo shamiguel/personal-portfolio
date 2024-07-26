@@ -1,6 +1,6 @@
 <div class="heading">
     <h2>{{this.sectionData.name}}</h2>
-    <a class="link" routerLink="/{{this.sectionData.name.toLocaleLowerCase()}}" routerLinkActive="active" ariaCurrentWhenActive="page">More {{this.sectionData.name}}</a>
+    <a routerLink="/{{this.sectionData.name.toLocaleLowerCase()}}" routerLinkActive="active" ariaCurrentWhenActive="page"><p>More {{this.sectionData.name}}</p></a>
 </div>
 <div class="teams" >
     <div *ngFor="let experience of this.sectionData.content">
