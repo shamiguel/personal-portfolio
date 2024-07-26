@@ -1,6 +1,13 @@
 .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
     h2{
         font-size: 2rem;
+    }
+    .link{
+        
     }
 }
 .teams{

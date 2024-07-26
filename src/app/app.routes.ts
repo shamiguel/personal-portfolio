@@ -1,12 +1,14 @@
 import { Routes } from '@angular/router';
-import { ExperienceComponent } from './experience/experience.component';
-import { WritingComponent } from './writing/writing.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { MainComponent } from './main/main.component';
+import { SectionPageComponent } from './section-page/section-page.component';
+import { SectionDetailsComponent } from './section-details/section-details.component';
 
 export const routes: Routes = [
     {path: '', component: MainComponent},
-    {path: 'experience', component: ExperienceComponent},
-    {path: 'writings', component: WritingComponent},
-    {path: 'projects', component: ProjectsComponent},
+    {path: 'experience', component: SectionPageComponent},
+    {path: 'experience/:id', component: SectionDetailsComponent},
+    {path: 'writings', component: SectionPageComponent},
+    {path: 'writings/:id', component: SectionDetailsComponent},
+    {path: 'projects', component: SectionPageComponent},
+    {path: 'projects/:id', component: SectionDetailsComponent},
 ];

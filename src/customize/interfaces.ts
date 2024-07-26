@@ -8,6 +8,7 @@ export interface Section {
 
 export interface Content {
     name: string
+    id: number
     image: string
     position: string 
     text: string 
