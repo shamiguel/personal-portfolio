@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { intro, projectSection, experienceSection, writingSection } from '../../customize/portfolio';
+import { intro, socialMediaLinks, projectSection, experienceSection, writingSection } from '../../customize/portfolio';
 import { Observable, of } from 'rxjs';
-import { Section, Content } from '../../customize/interfaces';
+import { Section, Content, Link } from '../../customize/interfaces';
 @Injectable({
   providedIn: 'root'
 })
@@ -41,5 +41,9 @@ export class PortfolioService {
     const exp = experienceSection.content.find((c) => c.id === id)
     if(!exp) return undefined;
     return of(exp)
+  }
+
+  getSocialMediaLinks(): Observable<Link[]>{
+    return of(socialMediaLinks)
   }
 }

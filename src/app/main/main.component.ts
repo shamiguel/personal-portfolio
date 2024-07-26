@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PortfolioService } from '../services/portfolio.service';
-import { Section, Content } from '../../customize/interfaces';
+import { Section, Content, Link } from '../../customize/interfaces';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -21,6 +21,8 @@ export class MainComponent {
   faGithub = faGithub;
   faLinkedIn = faLinkedin;
   faMedium = faMedium;
+
+  socialMediaLinks:Link[] = [];
 
   portfolioTitle: string = "";
   blurb: string = "";
@@ -54,9 +56,12 @@ export class MainComponent {
       this.portfolioTitle = data.portfolioName;
       this.blurb = data.blurb
     })
+    this.portfolioService.getSocialMediaLinks().subscribe((data) => {
+      this.socialMediaLinks = data
+    })
     this.portfolioService.getExperiences().subscribe((data)=>{
       this.experiencesSection = data;
-      this.experiences = this.experiencesSection.content;
+  
     })
     this.portfolioService.getProjects().subscribe((data)=>{
       this.projectsSection = data;

@@ -2,7 +2,12 @@
 <h1>{{this.portfolioTitle}}</h1>
 <h2>{{this.blurb}}</h2>
 <p class="social-media">
-    <fa-icon class="fa-2x" [icon]="faGithub"></fa-icon>
+    <ng-container *ngFor="let link of socialMediaLinks;">
+        <div *ngIf="link.name === 'github'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faGithub"></fa-icon></a>
+        </div>
+     </ng-container>
+    
     <fa-icon class="fa-2x" [icon]="faLinkedIn"></fa-icon>
     <fa-icon class="fa-2x" [icon]="faMedium"></fa-icon>
     <fa-icon class="fa-2x" [icon]="faEnvelope"></fa-icon>

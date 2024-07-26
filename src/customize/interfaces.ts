@@ -6,6 +6,11 @@ export interface Section {
     content: Content[]
 }
 
+export interface Link {
+    name: string
+    url: string
+}
+
 export interface Content {
     name: string
     id: number
