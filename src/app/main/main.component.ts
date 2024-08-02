@@ -4,7 +4,7 @@ import { Section, Content, Link } from '../../customize/interfaces';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { MainSectionComponent } from '../main-section/main-section.component';
 import { FooterComponent } from "../footer/footer.component";
 
@@ -22,6 +22,7 @@ export class MainComponent {
   faGithub = faGithub;
   faLinkedIn = faLinkedin;
   faMedium = faMedium;
+  faTwitter = faTwitter
 
   socialMediaLinks:Link[] = [];
 

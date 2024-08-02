@@ -12,12 +12,17 @@
         <div class="link" *ngIf="link.name === 'medium'">
             <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faMedium"></fa-icon></a>
         </div>
-        <div class="link" *ngIf="link.name === 'gmail'">
+        <div class="link" *ngIf="link.name === 'mail'">
             <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faEnvelope"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'twitter'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faTwitter"></fa-icon></a>
         </div>
      </ng-container>
     </div>
 </div>
+
+<!-- You may change the order of your sections here -->
 <div id="experience">
     <app-main-section [sectionData]="experiencesSection"></app-main-section>
 </div>
