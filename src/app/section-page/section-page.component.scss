@@ -6,8 +6,12 @@
 .cards{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     div{
         max-width: 50%;
         padding-right: 1rem;
+        margin-right: auto;
     }
 }

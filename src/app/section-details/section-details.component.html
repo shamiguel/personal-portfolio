@@ -1,4 +1,8 @@
-<a class="link" routerLink="/{{this.segment.toLocaleLowerCase()}}" routerLinkActive="active" ariaCurrentWhenActive="page">Back to {{this.segment}}</a>
+<div class="links">
+    <a class="link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home </a> 
+    <p class="link"> / </p>
+    <a class="link" routerLink="/{{this.segment.toLocaleLowerCase()}}" routerLinkActive="active" ariaCurrentWhenActive="page">{{this.segment}}</a>
+</div>
 <div class="container">
     <div>
         <h1>{{this.content.name}}</h1>
