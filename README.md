@@ -12,7 +12,9 @@ This is a lightweight personal portfolio template that will allow you to have a 
 
 5. CUSTOMIZE! You can customize your portfolio by editing this file: src/customize/portfolio.ts. Be sure to follow the format provided in this file. 
 
-6. Once your changes are saved you can navigate to your repository's main page/settings/pages and your portfolio should be up and running!
+6. Once your changes are saved you can navigate to your repository's main page/settings/pages. Be sure to choose "Deploy From Branch" and choose the "prod" branch and "/root" ![Screenshot 2024-08-02 6 31 44 PM](https://github.com/user-attachments/assets/caf51678-6784-45a2-8883-6a32ae3f2ec6).
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0. One more time
 
