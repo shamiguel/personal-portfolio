@@ -89,7 +89,7 @@ const experience1: Content = {
 
 const experience2: Content = {
     name: 'Techikyaki',
-    id: 1,
+    id: 2,
     image: './assets/images/exp.avif',
     position: 'Junior Software Engineer March 2023 – Present<',
     text: `
@@ -108,7 +108,7 @@ const experience2: Content = {
 
 const experience3: Content = {
     name: 'TechTrek',
-    id: 1,
+    id: 3,
     image: './assets/images/exp.avif',
     position: 'Junior Software Engineer March 2023 – Present<',
     text: `
@@ -127,7 +127,7 @@ const experience3: Content = {
 
 const experience4: Content = {
     name: 'XYZ For Good',
-    id: 1,
+    id: 4,
     image: './assets/images/exp.avif',
     position: 'Junior Software Engineer March 2023 – Present<',
     text: `
@@ -146,6 +146,7 @@ const experience4: Content = {
 
 export const experienceSection: Section = {
   name: 'Experience',
+  primary: true,
   display: true,
   content: [experience1, experience2, experience3, experience4],
 };

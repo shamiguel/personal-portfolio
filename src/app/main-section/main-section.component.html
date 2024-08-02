@@ -2,12 +2,30 @@
     <h2>{{this.sectionData.name}}</h2>
     <a routerLink="/{{this.sectionData.name.toLocaleLowerCase()}}" routerLinkActive="active" ariaCurrentWhenActive="page"><p>More {{this.sectionData.name}}</p></a>
 </div>
-<div class="teams" >
-    <div *ngFor="let experience of this.sectionData.content">
-        <a routerLink="/{{this.sectionData.name.toLocaleLowerCase()}}/{{experience.id}}">
-            <img src={{experience.image}} width="200" height="100" >
-            <h3>{{experience.name}}</h3>
-        </a>
-    </div>
+<div class="teams">
+    <ng-container *ngIf="sectionData.primary; else regularBlock">
+        <div *ngFor="let experience of sectionData.content">
+            <div *ngIf="experience.id === 1; else thumbnail">
+                <a routerLink="/{{ sectionData.name.toLocaleLowerCase() }}/{{ experience.id }}">
+                    <img [src]="experience.image" width="200" height="100">
+                    <h3>{{ experience.name }}</h3>
+                </a>
+            </div>
+            <ng-template #thumbnail>
+            <a routerLink="/{{ sectionData.name.toLocaleLowerCase() }}/{{ experience.id }}">
+                <img [src]="experience.image" width="200" height="100">
+                <h3>{{ experience.name }}</h3>
+            </a>
+        </ng-template>
+        </div>
+    </ng-container>
+    <ng-template #regularBlock>
+        <div *ngFor="let experience of sectionData.content">
+            <a routerLink="/{{ sectionData.name.toLocaleLowerCase() }}/{{ experience.id }}">
+                <img [src]="experience.image" width="200" height="100">
+                <h3>{{ experience.name }}</h3>
+            </a>
+        </div>
+    </ng-template>
 </div>
-    
+

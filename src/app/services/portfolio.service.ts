@@ -7,6 +7,12 @@ import { Section, Content, Link } from '../../customize/interfaces';
 })
 export class PortfolioService {
 
+  sections:Section[] = [
+    projectSection,
+    experienceSection,
+    writingSection
+  ]
+
   constructor() { }
 
   getIntro(): Observable<any>{
@@ -45,5 +51,11 @@ export class PortfolioService {
 
   getSocialMediaLinks(): Observable<Link[]>{
     return of(socialMediaLinks)
+  }
+
+  getSectionNames(): Observable<string[]>{
+      const names:string[] = [];
+      this.sections.forEach((section) => names.push(section.name))
+      return of(names);
   }
 }

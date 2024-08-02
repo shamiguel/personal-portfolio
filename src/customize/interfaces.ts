@@ -2,6 +2,7 @@
 
 export interface Section {
     name: string
+    primary?: boolean
     display: boolean 
     content: Content[]
 }

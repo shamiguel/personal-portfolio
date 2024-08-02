@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 import { Section } from '../../customize/interfaces';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgIfContext } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({

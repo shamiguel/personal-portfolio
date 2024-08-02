@@ -6,12 +6,13 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { MainSectionComponent } from '../main-section/main-section.component';
+import { FooterComponent } from "../footer/footer.component";
 
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule, MainSectionComponent],
+  imports: [CommonModule, FontAwesomeModule, MainSectionComponent, FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
