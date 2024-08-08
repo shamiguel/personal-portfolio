@@ -579,7 +579,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
       <p>My role has also included working closely with cross-functional teams to gather requirements, identify technical challenges, and propose effective solutions. This experience has honed my problem-solving skills and ability to adapt to fast-paced, dynamic environments.</p>
       
       <p>Overall, my time at XYZ Tech Solutions has provided me with a solid foundation in software engineering principles and best practices. I am committed to continuing my professional growth and contributing to impactful software development projects.</p>
-      `,link:"https://example.com"},gz={name:"TechTrek",id:3,image:"./assets/images/colors.avif",position:"Junior Software Engineer March 2023 \u2013 Present",text:`
+      `,link:"https://example.com"},gz={name:"TechTrek",id:3,image:"./assets/images/exp.avif",position:"Junior Software Engineer March 2023 \u2013 Present",text:`
       <p>As a Junior Software Engineer at XYZ Tech Solutions, I contribute to the development and maintenance of web applications and software solutions. My primary responsibilities include collaborating with senior developers to design, code, and test new features while ensuring high-quality performance and user experience.</p>
       
       <p>In my role, I have been involved in various projects, including the development of a customer management system using Angular and Node.js. I have actively participated in code reviews, debugging, and troubleshooting to enhance the functionality and efficiency of our software products. Additionally, I have gained experience with version control systems like Git and project management tools such as JIRA.</p>
@@ -589,7 +589,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
       <p>My role has also included working closely with cross-functional teams to gather requirements, identify technical challenges, and propose effective solutions. This experience has honed my problem-solving skills and ability to adapt to fast-paced, dynamic environments.</p>
       
       <p>Overall, my time at XYZ Tech Solutions has provided me with a solid foundation in software engineering principles and best practices. I am committed to continuing my professional growth and contributing to impactful software development projects.</p>
-      `,link:"https://example.com"},zz={name:"XYZ For Good",id:4,image:"./assets/images/writing.avif",position:"Junior Software Engineer March 2023 \u2013 Present",text:`
+      `,link:"https://example.com"},zz={name:"XYZ For Good",id:4,image:"./assets/images/colors.avif",position:"Junior Software Engineer March 2023 \u2013 Present",text:`
       <p>As a Junior Software Engineer at XYZ Tech Solutions, I contribute to the development and maintenance of web applications and software solutions. My primary responsibilities include collaborating with senior developers to design, code, and test new features while ensuring high-quality performance and user experience.</p>
       
       <p>In my role, I have been involved in various projects, including the development of a customer management system using Angular and Node.js. I have actively participated in code reviews, debugging, and troubleshooting to enhance the functionality and efficiency of our software products. Additionally, I have gained experience with version control systems like Git and project management tools such as JIRA.</p>
