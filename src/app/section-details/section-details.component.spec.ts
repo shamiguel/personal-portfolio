@@ -1,26 +1,36 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ActivatedRoute } from '@angular/router';
 import { SectionDetailsComponent } from './section-details.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { PortfolioService } from '../services/portfolio.service';
+import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
+import { Content } from '../../customize/interfaces';
 
-describe('SectionPageComponent', () => {
+describe('SectionDetailsComponent', () => {
   let component: SectionDetailsComponent;
   let fixture: ComponentFixture<SectionDetailsComponent>;
   let portfolioService: jasmine.SpyObj<PortfolioService>;
 
+  const mockContent: Content = {
+    name: 'How In The World Do I Make This Accessible?',
+    id: 1,
+    image: './assets/images/writing.avif',
+    position: 'string',
+    text: 'Lorem impsum herm er askll moded',
+    link: 'https://example.com',
+  };
+
   beforeEach(async () => {
-    const portfolioServiceSpy = jasmine.createSpyObj('PortfolioService', ['getExperiences', 'getProjects', 'getWritings']);
+    const portfolioServiceSpy = jasmine.createSpyObj('PortfolioService', ['getExperience', 'getProject', 'getWriting']);
     
     await TestBed.configureTestingModule({
       imports: [
         HttpClientTestingModule,
-        SectionDetailsComponent
+        SectionDetailsComponent // Import the standalone component
       ],
       providers: [
         { provide: PortfolioService, useValue: portfolioServiceSpy },
-        { provide: ActivatedRoute, useValue: { params: of({}) } }
+        { provide: ActivatedRoute, useValue: { params: of({}) } } // Keep ActivatedRoute simple
       ]
     })
     .compileComponents();

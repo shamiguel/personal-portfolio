@@ -22,7 +22,6 @@ export class SectionDetailsComponent {
     const segments = this.currentUrl.split('/');
     this.segment = segments[1];
     this.id = parseInt(segments[2]);
-    console.log(this.segment)
     if(!this.id) return;
     if(this.segment === 'experience'){
       this.portfolioService.getExperience(this.id)!.subscribe((data)=>{
