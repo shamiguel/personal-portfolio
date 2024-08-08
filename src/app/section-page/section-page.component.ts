@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Content, Section } from '../../customize/interfaces';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { Section } from '../../customize/interfaces';
+import {Router, RouterModule } from '@angular/router';
 import { PortfolioService } from '../services/portfolio.service';
 import { CommonModule } from '@angular/common';
 

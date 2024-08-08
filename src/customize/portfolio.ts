@@ -142,7 +142,7 @@ const experience2: Content = {
 const experience3: Content = {
     name: 'TechTrek',
     id: 3,
-    image: './assets/images/colors.avif',
+    image: './assets/images/exp.avif',
     position: 'Junior Software Engineer March 2023 – Present',
     text: `
       <p>As a Junior Software Engineer at XYZ Tech Solutions, I contribute to the development and maintenance of web applications and software solutions. My primary responsibilities include collaborating with senior developers to design, code, and test new features while ensuring high-quality performance and user experience.</p>
@@ -161,7 +161,7 @@ const experience3: Content = {
 const experience4: Content = {
     name: 'XYZ For Good',
     id: 4,
-    image: './assets/images/writing.avif',
+    image: './assets/images/colors.avif',
     position: 'Junior Software Engineer March 2023 – Present',
     text: `
       <p>As a Junior Software Engineer at XYZ Tech Solutions, I contribute to the development and maintenance of web applications and software solutions. My primary responsibilities include collaborating with senior developers to design, code, and test new features while ensuring high-quality performance and user experience.</p>
