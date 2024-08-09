@@ -19,10 +19,33 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      
+        
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
       - name: Run Tests
         run: npm run test -- --watch=false --browsers=ChromeHeadless
+        
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
       - name: Build Angular app to production
         run: npm run build:prod
 
