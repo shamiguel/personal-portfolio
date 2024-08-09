@@ -1,6 +1,7 @@
 # PersonalPortfolio
 
-This is a lightweight personal portfolio template that will allow you to have a customized portfolio up with minimal overhead. This portfolio template utilizes GithubPages with Github Actions.
+## Project Overview: 
+This is a very lightweight version of my 2nd Language Learning project. Instead of focusing on live edits with authentication, I took inspiration from this other existing customizable portfolio template, https://github.com/saadpasta/developerFolio, which only requires a user to input their information via a JSON file. Therefore, this project will primarily be a frontend endeavor and focus on aesthetics, accessibility, and user-friendliness.
 
 # Instructions 
 1. If you do not currently have one, sign up for a Github account.
@@ -20,9 +21,6 @@ THEN, navigate to the angular.json file and also replace "personal-portfolio" wi
 6. Once your changes are saved, you can navigate to your repository's main page/settings/pages. Be sure to choose "Deploy From Branch" and choose the "prod" branch and "/root" ![Screenshot 2024-08-02 6 31 44 PM](https://github.com/user-attachments/assets/caf51678-6784-45a2-8883-6a32ae3f2ec6). After a few minutes, your customized portfolio site will be good to go!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
-
-## Project Overview: 
-This is a very lightweight version of my 2nd Language Learning project. Instead of focusing on live edits with authentication, I took inspiration from this other existing customizable portfolio template, https://github.com/saadpasta/developerFolio, which only requires a user to input their information via a JSON file. Therefore, this project will primarily be a frontend endeavor and focus on aesthetics, accessibility, and user-friendliness. I plan on creating a detailed how-to page so that individuals with non technical background can set up their own portfolios.
 
 ## Wireframe
 ![Screenshot 2024-07-19 2 31 02 PM](https://github.com/user-attachments/assets/7fa30c19-d734-44db-ae32-0e986f4a77d3)
