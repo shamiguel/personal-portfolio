@@ -68,7 +68,7 @@ const project2: Content = {
 const project3: Content = {
   name: 'Open Source Project',
   id: 3,
-  image: './assets/images/project.avif',
+  image: './assets/images/code.avif',
   position: 'string',
   text: 'Lorem impsum herm er askll moded',
   link: 'https://example.com',
@@ -78,7 +78,7 @@ const project3: Content = {
 /* const project4: Content = {
     name: 'Open Source Project',
     id: 4,
-    image: './assets/images/project.avif',
+    image: './assets/images/comp.avif',
     position: 'string',
     text: 'Lorem impsum herm er askll moded',
     link: 'https://example.com',
@@ -142,7 +142,7 @@ const experience2: Content = {
 const experience3: Content = {
     name: 'TechTrek',
     id: 3,
-    image: './assets/images/exp.avif',
+    image: './assets/images/startup.avif',
     position: 'Junior Software Engineer March 2023 – Present',
     text: `
       <p>As a Junior Software Engineer at XYZ Tech Solutions, I contribute to the development and maintenance of web applications and software solutions. My primary responsibilities include collaborating with senior developers to design, code, and test new features while ensuring high-quality performance and user experience.</p>
@@ -219,7 +219,7 @@ export const experienceSection: Section = {
 const writing1: Content = {
   name: 'How In The World Do I Make This Accessible?',
   id: 1,
-  image: './assets/images/writing.avif',
+  image: './assets/images/code.avif',
   position: 'string',
   text: 'Lorem impsum herm er askll moded',
   link: 'https://example.com',
@@ -237,7 +237,7 @@ const writing2: Content = {
 const writing3: Content = {
   name: 'My Time As An Apprentice',
   id: 3,
-  image: './assets/images/writing.avif',
+  image: './assets/images/colors.avif',
   position: 'string',
   text: 'Lorem impsum herm er askll moded',
   link: 'https://example.com',
